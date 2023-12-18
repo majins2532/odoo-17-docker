@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<odoo>
+    <data>
+        <!-- MAIN MENU -->
+        <menuitem name="Savings"
+            id="saving_main_menu"
+            sequence="100"
+            groups="saving.group_saving_user"
+            web_icon="event,static/description/icon.png"/>
+        <!-- HEADER: SEVINGS -->
+        <menuitem name="Savings"
+            id="saving_order_menu"
+            sequence="1"
+            parent="saving.saving_main_menu"
+            groups="saving.group_saving_user"/>
+        <menuitem name="Saving Orders"
+            id="saving_order_item"
+            sequence="1"
+            parent="saving.saving_main_menu"/>
+        <menuitem name="Payment Lines"
+            id="payment_line_item"
+            sequence="1"
+            parent="saving.saving_main_menu"/>
+        <menuitem name="Saving Lines"
+            id="saving_line_item"
+            sequence="1"
+            parent="saving.saving_main_menu"/>
+    </data>
+</odoo>
